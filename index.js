@@ -10,12 +10,12 @@ const { execSync } = require('child_process');
 const FILE_PATH = process.env.FILE_PATH || './temp'; // 运行文件夹，节点文件存放目录
 const projectPageURL = process.env.URL || '';        // 填写项目域名可开启自动访问保活，非标端口的前缀是http://
 const intervalInseconds = process.env.TIME || 120;   // 自动访问间隔时间（120秒）
-const UUID = process.env.UUID || 'c2df3b34-a18f-463d-8637-ccdd42df7907';
+const UUID = process.env.UUID || 'a71beca9-c46b-48f8-be8f-eb0975649470';
 const ZHAZHA_SERVER = process.env.ZHAZHA_SERVER || 'nezha.dfgdrh.cf';      // 哪吒3个变量不全不运行
 const ZHAZHA_PORT = process.env.ZHAZHA_PORT || '443';              // 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一时开启tls
 const ZHAZHA_KEY = process.env.ZHAZHA_KEY || '';                   // 哪吒客户端密钥
-const GOGO_DOMAIN = process.env.GOGO_DOMAIN || 'segfault.dfgdrh.cf';              // 固定隧道域名，留空即启用临时隧道
-const GOGO_AUTH = process.env.GOGO_AUTH || 'eyJhIjoiZTAzOWY4YzMzZGE3MWI4ZjI3ZDEyNGQ3NzU5M2QzNTciLCJ0IjoiZTc1M2YxMmYtNGNjZC00YzdiLWE2NTItZTc2YzgzZDdlNGRjIiwicyI6Ik1tRXlPV1ExTWpjdE5qRXhZeTAwWkRaaExUZzBabUV0WXpFMU9ESXlaakJpTVRFNCJ9';                 // 固定隧道json或token，留空即启用临时隧道
+const GOGO_DOMAIN = process.env.GOGO_DOMAIN || 'sw.bafhzn.tk';              // 固定隧道域名，留空即启用临时隧道
+const GOGO_AUTH = process.env.GOGO_AUTH || '{"AccountTag":"0a789bb28a9d5ec2ef558519bb536ac2","TunnelSecret":"OfSNfBqEVIGEzxe1hI8OHSIYRjyUjuBDUBVPsf0YQGQ=","TunnelID":"0d6c3293-ca76-4fcb-9e97-ff57b514f56e"}';                 // 固定隧道json或token，留空即启用临时隧道
 const CFIP = process.env.CFIP || 'skk.moe';                   // 优选域名或优选ip
 const CFPORT = process.env.CFPORT || 443;                    // 节点端口
 const NAME = process.env.NAME || 'Vls';                     // 节点名称
