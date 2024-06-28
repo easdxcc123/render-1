@@ -19,8 +19,8 @@ const GOGO_AUTH = process.env.GOGO_AUTH || '{"AccountTag":"0a789bb28a9d5ec2ef558
 const CFIP = process.env.CFIP || 'skk.moe';                   // 优选域名或优选ip
 const CFPORT = process.env.CFPORT || 443;                    // 节点端口
 const NAME = process.env.NAME || 'Vls';                     // 节点名称
-const ARGO_PORT = process.env.ARGO_PORT || 28080;           // Argo端口，使用固定隧道token需和cf后台设置的端口对应
-const PORT = process.env.SERVER_PORT || process.env.PORT || 22000; // 节点订阅端口，若无法订阅请手动改为分配的端口
+const ARGO_PORT = process.env.ARGO_PORT || 28150;           // Argo端口，使用固定隧道token需和cf后台设置的端口对应
+const PORT = process.env.SERVER_PORT || process.env.PORT || 24000; // 节点订阅端口，若无法订阅请手动改为分配的端口
 
 //创建运行文件夹
 if (!fs.existsSync(FILE_PATH)) {
